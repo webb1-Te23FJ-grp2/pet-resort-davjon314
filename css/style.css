@@ -20,7 +20,6 @@ img {
     margin: 0 20px 0;
 }
 
-
 /* TOP MENU STYLING */
 #top-menu {
     display: flex;
@@ -29,18 +28,19 @@ img {
 
 .top-menu-logo {
     display: flex;
+    align-items: center;
 }
 
 .top-menu-nav {
     width: 25%;
+    margin: 0 50px;
 }
 
 .nav-list {
+    height: 100%;
     display: flex;
     justify-content: space-between;
-}
-
-ul {
+    align-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -93,10 +93,7 @@ ul {
 .box-img {
     border-radius: 10px;
     object-fit: cover;
-}
-
-.box-info {
-    margin: 20px;
+    object-position: center;
 }
 
 .big-box {
@@ -108,4 +105,18 @@ ul {
 
 .grooming-box {
     display: flex;
+}
+
+.logo-flexdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+/* TEXT FIX */
+.nav-links {
+    text-decoration: none;
+    color: black;
 }
