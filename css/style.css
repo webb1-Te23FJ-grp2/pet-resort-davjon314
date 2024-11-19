@@ -16,9 +16,10 @@ img {
 }
 
 #wrapper {
-    max-width: 1200px;
-    margin: 0 20px 0;
+    width: 1200px;
+    margin: 0 15px 0;
 }
+
 
 /* TOP MENU STYLING */
 #top-menu {
@@ -32,8 +33,7 @@ img {
 }
 
 .top-menu-nav {
-    width: 25%;
-    margin: 0 50px;
+    width: 300px;
 }
 
 .nav-list {
@@ -107,7 +107,11 @@ img {
     display: flex;
 }
 
-.logo-flexdiv {
+.grooming-box-info {
+    margin-left: 20px;
+}
+
+.partners-logos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +120,31 @@ img {
 
 
 /* TEXT FIX */
+h1, h2, p, a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.nav-links, .top-menu-logo h2, .big-box-info h1, .box-info h2 {
+    font-weight: 500;
+}
+
+a {
+    padding: 15px 15px 15px 0;
+}
+
 .nav-links {
     text-decoration: none;
     color: black;
+    padding: 15px;
+}
+
+.big-box-info h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.big-box-info p {
+    color: white;
 }
