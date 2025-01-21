@@ -46,6 +46,10 @@ img {
 }
 
 /* GRID LAYOUT */
+#top-menu {
+  grid-area: top-menu;
+}
+
 .big-box {
   grid-area: big-box;
 }
@@ -55,7 +59,7 @@ img {
 }
 
 .merch-box {
-  grid-area: merch-box;
+  grid-area: merch-box
 }
 
 .bfl-box {
@@ -72,12 +76,16 @@ img {
 
 #container {
   display: grid;
-  grid-template-rows: 600px 300px;
+  grid-template-rows: 70px 600px 300px;
   gap: 15px;
   grid-template-areas:
-    "big-box        big-box         big-box         big-box"
-    "grooming-box   grooming-box    grooming-box    partners-box"
-    "merch-box      bfl-box         dining-box      partners-box";
+    "top-menu"
+    "big-box"
+    "grooming-box"
+    "merch-box" 
+    "bfl-box"
+    "dining-box"      
+    "partners-box";
 }
 
 /* CONTENT BOX STYLING   */
@@ -153,4 +161,19 @@ a {
 
 .big-box-info p {
   color: white;
+}
+
+
+/* MEDIA QUERYS */
+@media screen and (min-width: 650px) {
+  #container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "top-menu       tp-menu"
+    "big-box        big-box"
+    "grooming-box   grooming-box"
+    "bfl-box        merch-box"
+    "dining-box     dining-box"
+    "partners-box   partners-box";
+  }
 }
